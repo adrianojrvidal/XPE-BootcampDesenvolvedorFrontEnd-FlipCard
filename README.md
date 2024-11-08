@@ -1,4 +1,4 @@
-# IGTI-FlipCard
+# XPE-BootcampDesenvolvedorFrontEnd-FlipCard
  Projeto do Bootcamp Desenvolvedor Front-End da XPE
 
 Bootcamp: Desenvolvendor(a) Front End 
