@@ -13,9 +13,6 @@ const fetchCountries = async () => {
 
     const ul = document.getElementById('countryContainer__list');
 
-
-
-
     // Colocar os dados na lista
     if (countriesArray.length === 0) {
         const loading = '<li>Carregando...</li>';
@@ -26,17 +23,17 @@ const fetchCountries = async () => {
 
         countriesArray[0].forEach(country => {
             const eachCountry = `
-                <li class="countryCard"
+                <li class="countryCard ${country.region}">
                     <div class="countryCard__inner">
                         <div class="countryCard__front">
-                            <img src="${country.flags.svg}" alt="${country.name}"/>
+                            <img src="${country.flags.svg}" class="countryCard__flags" alt="${country.name}"/>
                         </div>
                         <div class="countryCard__back">
                             <h3>${country.name}</h3>
-                            <p>Nome nativo: ${country.nativeName}<p>
-                            <p>Capital: ${country.capital}<p>
-                            <p>Região: ${country.region}<p>
-                            <p>Sub-região: ${country.subregion}<p>
+                            <p>Nome nativo: ${country.nativeName}</p>
+                            <p>Capital: ${country.capital}</p>
+                            <p>Região: ${country.region}</p>
+                            <p>Sub-região: ${country.subregion}</p>
                         </div>
                     </div>
                 </li>
